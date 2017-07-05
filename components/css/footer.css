@@ -1,0 +1,9 @@
+#footer {
+ text-align: center;
+ position: fixed;
+ z-index: -1;
+ height: 250px; /*This may to be adjusted depending on the content of your footer*/
+ width: 100%;
+ bottom: 0;
+}
+

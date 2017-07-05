@@ -7,54 +7,75 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-     <div id="wrapper" class="toggled">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        SriLankanKey
-                    </a>
-                </li>
-                <li>
-                    <strong><a href="#">Home</a></strong>
-                    
-                </li>
-                <li>
-                    <strong><a href="#">Our Projects</a></strong>
-                </li>
-                <li>
-                    <strong><a href="#">Social Service</a></strong>
-                </li>               
-                <li>
-                    <strong><a href="#">About Us</a></strong>
-                </li>
-                <li>
-                    <strong><a href="#">Donate</a></strong>
-                </li>                
+<header>
+<div class="nav-side-menu">
+    <div class="brand"></div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+            <li>
+                <a href="#">
+                    <i class="fa fa-home fa-lg" aria-hidden="true"></i> Home
+                </a>
+            </li>
+            <li class=" active">
+                <a href="#">
+                    <i class="fa fa-globe fa-lg" aria-hidden="true"></i> Projects
+                </a>
+            </li>
+           
+            <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <a href="#"><i class="fa fa-users fa-lg" aria-hidden="true"></i> Services <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="service">
+                <li>New Service 1</li>
+                <li>New Service 2</li>
+                <li>New Service 3</li>
             </ul>
             
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
+            <li>
+                <a href="#">
+                    <i class="fa fa-info fa-lg" aria-hidden="true"></i> About Us
+                </a>
+            </li>
+        </ul>
     </div>
-    <!-- /#wrapper -->
+</div>
+</header>
+
+
+<div class="container" id="main">
+    <div class="row">
+        <div class="col-md-12">
+<!--
+           <div class="jumbo-container">
+            <div class="border-box">
+               <div>
+                  <h2>A BETTER PLACE</h2>                
+               </div>
+                
+            </div>
+            </div>
+-->
+      <div>
+          <a href="#" role="button" class="btn btn-default">Our Misson</a>
+      </div>
+      <div>
+           <a href="#" role="button" class="btn btn-default">Donate</a>
+      </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer">
+  <br><h1>San Francisco</h1>
+ <p>123 Easy St<br>
+San Francisco, CA 94104<br>
+   415 555 0234</p>
+</footer>
+
+
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -67,6 +88,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script src="js/script.js"></script>
+<script src="https://use.fontawesome.com/6551ccbbd8.js"></script>
 
 <!-- Menu Toggle Script -->
 <script>
@@ -74,6 +96,10 @@ $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
 });
+
+  
 </script>
+
+
 </body>
 </html>

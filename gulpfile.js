@@ -13,7 +13,7 @@ jsSources='components/scripts/*.js';
 outputDir = 'builds/development/';
 phpSources= 'builds/development/*.php';
 htmlSources= 'builds/development/views/*.html';
-includeSources= 'builds/development/includes/*.inc.php';
+includeSources= 'builds/development/includes/*.php';
 cssSources='components/css/*.css'
 
 gulp.task('log',function(){    
@@ -47,6 +47,7 @@ gulp.task('html',function(){
     gulp.src(htmlSources);
 });
 
+//task for included files
 gulp.task('includes',function(){
     gulp.src(includeSources);
 });

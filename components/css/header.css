@@ -1,5 +1,16 @@
-/*
-header {
-    background: url('../images/headerimage.jpg') center center no-repeat;
-    height: 600px;
-}*/
+
+
+.nav a{
+/*    color: white !important;*/
+    font-size: 1.4em !important;
+    }
+
+.navbar-brand{
+  font-size: 1.4em !important;  
+}
+
+.navbar
+{
+    margin-bottom: 0;
+}
+

@@ -1,0 +1,38 @@
+/******************start of general styles**************************/
+body p,body h4,body h3,body h2,body h1,body span,body a
+{
+    font-family:Lora !important;
+}
+#content {
+    margin-bottom: 250px;    
+    
+}
+
+body
+{
+    background-color:black;
+}
+
+.row{
+    background-color: white;
+    padding-top: 25px;
+    
+}
+
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+  
+  
+}
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/******************end of general styles**************************/

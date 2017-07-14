@@ -7,8 +7,8 @@ include('includes/header.inc.php');
        
         <div class="jumbotron">
           <div>
-           <h1>OUR MISSION</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut iste accusamus perferendis quibusdam consequatur, ab ad non magni repudiandae quasi? Aliquid vero aspernatur repudiandae molestias quae quia suscipit, corrupti expedita.
+           <h1>OUR VISION</h1>
+           <p>To enhance peaceful co-existence of all Sri Lankan communities irrespective of all socio-economic, linguistic and cultural diversities.
            </p>
            </div>
         </div>
@@ -19,15 +19,15 @@ include('includes/header.inc.php');
     </article>
     </section>
     
-    <section id="whatwedo" class="row-eq-height">
+    <section id="vision" class="row-eq-height">
     <article class="col-xs-12 col-sm-6">
         <img src="images/whatwedo.jpg"  class=" float-left img-responsive">
     </article>
     <article class="col-xs-12 col-sm-6">
         <div class="jumbotron">
           <div>
-           <h1>WHAT WE DO</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut iste accusamus perferendis quibusdam consequatur, ab ad non magni repudiandae quasi? Aliquid vero aspernatur repudiandae molestias quae quia suscipit, corrupti expedita.
+           <h1>OUR MISSION</h1>
+           <p>To develop capacities of sons and daughters of Mother Sri Lanka by equipping them with necessary know-how and training enabling them to live in harmony and strength.
            </p>
            </div>
         </div>        

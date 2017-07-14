@@ -2,15 +2,29 @@
 
 .nav a{
 /*    color: white !important;*/
-    font-size: 1.4em !important;
+    font-size: 1.1em !important;
     }
 
 .navbar-brand{
-  font-size: 1.4em !important;  
+  font-size: 1.4em !important; 
+/*  padding: 0px;*/
 }
 
 .navbar
 {
     margin-bottom: 0;
+}
+
+.navbar-brand img {
+  height: 150%;
+    float:left;
+    vertical-align: middle;
+  
+/*
+  margin-left: 20px;
+ position:absolute;
+    z-index: 1;
+*/
+  
 }
 

@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!--    bootstrap stylesheet-->
+
+    <link rel="stylesheet" href="css/styles.css"> <!--    local stylesheet-->
+    
+<!--    <link rel="stylesheet" href="css/jquery-ui.min.css">-->
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!--    jquery ui stylesheet-->
+    
+
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora">
+<!--google fonts-->
+
+  
 </head>
 <body>
 <header>
@@ -17,16 +30,64 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#featured">SriLankan <span class="subhead">Key</span></a>
+<!--                <a class="navbar-brand" href="#featured">SriLankan <span class="subhead">Key</span></a>-->
+           <a class="navbar-brand" href="index.php">
+<!--           <img src="images/logo.jpg" class="icon img img-responsive center-block">-->
+          <span>SriLankanKey <img src="images/logo.jpg" class="icon img img-responsive center-block"></span>
+           </a>
+           
+<!--           <a class="navbar-brand" href="#featured">Wisdom <span class="subhead">Pet Medicine</span></a>-->
             </div>
             <!-- navbar-header -->
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">
+                   <?php
+                    
+                    // array of labels and pages
+                    $pages= array
+                    (
+                        'Home'=>'index.php',
+                        'Articles & News'=>'articles.php',
+                        'Tree & Mind'=>'treeandmind.php',
+                        'SLKey Magazine'=>'magazine.php',
+                        'About Us'=>'about.php',
+                        'Contact Us'=>'contact.php'
+                    );
+                    
+//                    The page that's being viewed
+                    $this_page=basename($_SERVER['PHP_SELF']);
+                    
+//                    Create each menu item
+                    foreach ($pages as $k=>$v)
+                    {
+                     echo '<li';
+                        
+                     if ($v=='articles.php')
+                     {
+                       if ($this_page=='article.php')
+                        {
+                           echo ' class="active"'; 
+                        }  
+                     }
+                        
+                     if ($this_page==$v)
+                     {
+                        echo ' class="active"'; 
+                     }
+                        echo '><a href="'.$v.'">'.$k.'</a></li>';
+                    }
+                    
+                    
+                    ?>
+                   
+<!--
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="mission.php">Mission</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="staff.php">Staff</a></li>
-                     <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="articles.php">Articles & News</a></li>
+                    <li><a href="#">Tree & Mind</a></li>
+                    <li><a href="magazine.php">SLKey Magazine</a></li>
+                   <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+-->
                     
                     
                 </ul>

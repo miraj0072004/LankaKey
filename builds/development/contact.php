@@ -7,7 +7,7 @@ include('includes/header.inc.php');
                 <!-- Form Name -->
                 <legend>Contact Us</legend>
 
-                <form class="well form-horizontal">
+                <form class="form-horizontal">
                     <div class="form-group">
                         <label for="inputName" class="col-sm-2 control-label">Name</label>
                         <div class="col-sm-10">
@@ -62,10 +62,10 @@ include('includes/header.inc.php');
 
             </section>
             
-            <section class="col-xs-6">
+            <section class="col-xs-12 col-sm-6">
                 <div id="map"></div>                
             </section>
-            <section id="address">
+            <section id="address" class="col-xs-12 col-sm-6">
                 <div class="jumbotron">
                    <div>
                     <h3>

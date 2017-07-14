@@ -1,0 +1,67 @@
+.imghead
+{
+	background-image: url('../images/banner1.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 750px;
+    margin-bottom: 20px;
+    
+
+}
+
+
+/******************start of mission tab styles**************************/
+#mission article,#whatwedo article
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 10px;
+    background-color: white;     
+}
+
+#mission article h1,#vision article h1,#howwedoit h1{
+    font-family:'Roboto Condensed';
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#mission .jumbotron,#vision .jumbotron
+{
+    height: 100%;
+    display : flex;
+    align-items : center; 
+    
+}
+
+#mission .jumbotron p,#vision .jumbotron p
+{
+   color: darkgray;
+   font-size: 20px;
+   text-align: left;
+   
+}
+
+#myCarousel .nav a small {
+    display:block;
+}
+#myCarousel .nav {
+    background:#eee;
+}
+#myCarousel .nav a {
+    border-radius:0px;
+}
+
+#howwedoit
+{
+    margin-top: 0px;
+    background-color: white;
+}
+
+#howwedoit h1
+{
+    margin: 0px;
+    padding-top: 25px;
+}
+
+/******************end of mission tab styles**************************/

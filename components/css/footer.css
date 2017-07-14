@@ -1,9 +1,26 @@
 #footer {
- text-align: center;
+ text-align: left;
  position: fixed;
  z-index: -1;
  height: 250px; /*This may to be adjusted depending on the content of your footer*/
  width: 100%;
  bottom: 0;
+ 
 }
+
+#footer img
+{
+    max-width:300px;
+    max-height: 180px;
+    margin-bottom: 20px;
+    
+    
+}
+
+#footer_address,footer_copyright
+{
+    height: 100%;
+    display : flex;
+}
+
 

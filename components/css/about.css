@@ -1,0 +1,23 @@
+/******************about us tab styles**************************/
+#staff h3,#staff p
+{
+    text-align: center;
+}
+#staff section
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#about .jumbotron
+{
+    padding: 24px;
+}
+
+/*
+#about p,#about h4,#about h3,#about h2
+{
+    font-family:Lora;
+}
+*/
+/******************about us tab styles**************************/

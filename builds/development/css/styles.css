@@ -1,35 +1,177 @@
+/******************about us tab styles**************************/
+#staff h3,#staff p
+{
+    text-align: center;
+}
+#staff section
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#about .jumbotron
+{
+    padding: 24px;
+}
+
 /*
-.border-box {   
-    padding: 40px;
-    background-color: rgba(255,255,255,0.42) !important;
-    border: 4px solid #ffffff !important;
+#about p,#about h4,#about h3,#about h2
+{
+    font-family:Lora;
+}
+*/
+/******************about us tab styles**************************/
+#article
+{
+    background-color: white;
+}
+
+/*
+#articles p,#articles h4,#articles h3,#articles h2
+{
+    font-family:Lora;
+}*/
+
+.tree {
+    min-height:20px;
+    padding:19px;
+    margin-bottom:20px;
+    background-color:#fbfbfb;
+    border:1px solid #999;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px;
+    position:relative
+}
+.tree li::before, .tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto
+}
+.tree li::before {
+    border-left:1px solid #999;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width:1px
+}
+.tree li::after {
+    border-top:1px solid #999;
+    height:20px;
+    top:25px;
+    width:25px
+}
+.tree li span {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #999;
+    border-radius:5px;
+    display:inline-block;
+    padding:3px 8px;
+    text-decoration:none
+}
+.tree li.parent_li>span {
+    cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:30px
+}
+.tree li.parent_li>span:hover, .tree li.parent_li>span:hover+ul li span {
+    background:#eee;
+    border:1px solid #94a0b4;
+    color:#000
+}
+
+#articles_archive
+{
+   margin-top: 20px; 
+}
+
+#article_ul li
+{
+/*    display: none;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#services{
+    background-color: white;
+}
+
+
+
+.wpb_wrapper_parent
+{
+    height: 100%;
+    display : flex;
+    align-items : center;
     
 }
 
-.border-box h2 {
-    color: #ffffff;
-    font-size: 100px;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.jumbo-container
+.wpb_wrapper
 {
-    box-sizing: border-box;
-    width:100%;
-  
-}
-*/
+    border: 4px solid white;
 
-.imghead
+}
+
+
+
+
+
+#footer {
+ text-align: left;
+ position: fixed;
+ z-index: -1;
+ height: 250px; /*This may to be adjusted depending on the content of your footer*/
+ width: 100%;
+ bottom: 0;
+ 
+}
+
+#footer img
 {
-	background-image: url('../images/banner1.jpg');
-	background-position: center;
-	background-size: cover;
-	height: 750px; 
-
+    max-width:300px;
+    max-height: 180px;
+    margin-bottom: 20px;
+    
+    
 }
 
+#footer_address,footer_copyright
+{
+    height: 100%;
+    display : flex;
+}
+
+
+
+/******************start of general styles**************************/
+body p,body h4,body h3,body h2,body h1,body span,body a
+{
+    font-family:Lora !important;
+}
 #content {
     margin-bottom: 250px;    
     
@@ -37,7 +179,7 @@
 
 body
 {
-    background-color: beige;
+    background-color:black;
 }
 
 .row{
@@ -61,6 +203,52 @@ body
   flex-direction: column;
 }
 
+
+/******************end of general styles**************************/
+
+
+.nav a{
+/*    color: white !important;*/
+    font-size: 1.1em !important;
+    }
+
+.navbar-brand{
+  font-size: 1.4em !important; 
+/*  padding: 0px;*/
+}
+
+.navbar
+{
+    margin-bottom: 0;
+}
+
+.navbar-brand img {
+  height: 150%;
+    float:left;
+    vertical-align: middle;
+  
+/*
+  margin-left: 20px;
+ position:absolute;
+    z-index: 1;
+*/
+  
+}
+
+
+.imghead
+{
+	background-image: url('../images/banner1.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 750px;
+    margin-bottom: 20px;
+    
+
+}
+
+
+/******************start of mission tab styles**************************/
 #mission article,#whatwedo article
 {
     padding-right: 0px;
@@ -69,14 +257,14 @@ body
     background-color: white;     
 }
 
-#mission article h1,#whatwedo article h1,#howwedoit h1{
+#mission article h1,#vision article h1,#howwedoit h1{
     font-family:'Roboto Condensed';
     font-size: 50px;
     font-weight: 700;
     text-align: center;
 }
 
-.jumbotron
+#mission .jumbotron,#vision .jumbotron
 {
     height: 100%;
     display : flex;
@@ -84,14 +272,13 @@ body
     
 }
 
-.jumbotron p
+#mission .jumbotron p,#vision .jumbotron p
 {
    color: darkgray;
    font-size: 20px;
    text-align: left;
    
 }
-
 
 #myCarousel .nav a small {
     display:block;
@@ -115,59 +302,13 @@ body
     padding-top: 25px;
 }
 
-#services{
-    background-color: white;
-}
-
-#staff section h3 p
+/******************end of mission tab styles**************************/
+/*
+#magazine p,#magazine h3,#magazine li,#magazine h2,#magazine h4
 {
-    text-align: center;l
-}
-
-.wpb_wrapper_parent
-{
-    height: 100%;
-    display : flex;
-    align-items : center;
-    
-}
-
-.wpb_wrapper
-{
-    border: 4px solid white;
-
-}
-
-
-
-
-
-#footer {
- text-align: center;
- position: fixed;
- z-index: -1;
- height: 250px; /*This may to be adjusted depending on the content of your footer*/
- width: 100%;
- bottom: 0;
-}
-
-
-
-
-.nav a{
-/*    color: white !important;*/
-    font-size: 1.4em !important;
-    }
-
-.navbar-brand{
-  font-size: 1.4em !important;  
-}
-
-.navbar
-{
-    margin-bottom: 0;
-}
-
+    font-family:Bellefair;
+    font-size: 18px;
+}*/
 
 #map{
     height: 400px;

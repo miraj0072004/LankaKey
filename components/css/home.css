@@ -9,9 +9,19 @@
 
 }
 
+hr
+{
+    margin-left:10px;
+    margin-right:10px;
+    border: none;
+    height: 4px;
+    color: white;
+    background-color:white;
+}
+
 
 /******************start of mission tab styles**************************/
-#mission article,#whatwedo article
+#mission article,#vision article,#whatwedo article
 {
     padding-right: 0px;
     padding-left: 0px;
@@ -30,13 +40,15 @@
 {
     height: 100%;
     display : flex;
-    align-items : center; 
+    align-items : center;
+    margin-top: auto;
+    margin-bottom: auto;
     
 }
 
 #mission .jumbotron p,#vision .jumbotron p
 {
-   color: darkgray;
+   color: darkgrey;
    font-size: 20px;
    text-align: left;
    
@@ -65,3 +77,30 @@
 }
 
 /******************end of mission tab styles**************************/
+
+
+@media(max-width:767px)
+{
+.mission_text_small
+    {
+        display: flex;
+    }
+
+.mission_text_big
+    {
+        display: none !important;
+    }    
+}
+
+@media(min-width:767px)
+{
+.mission_text_small
+    {
+        display: none !important;
+    }
+
+.mission_text_big
+    {
+        display: flex;
+    }    
+}

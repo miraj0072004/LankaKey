@@ -16,11 +16,15 @@
     
     
 }
-
-#footer_address,footer_copyright
+#footer_address p
 {
-    height: 100%;
-    display : flex;
+    margin-bottom: 2px;
 }
 
 
+
+.align_content_vertical
+{
+    margin-top:auto;
+    margin-bottom:auto;
+}

@@ -1,4 +1,5 @@
 <?php
+require ('includes/config.inc.php');
 include('includes/header.inc.php'); 
 ?>
  <div class="row">
@@ -14,19 +15,19 @@ include('includes/header.inc.php');
         <section class="col-sm-4">
             <h3>Exotic Pets <span class="label label-primary">New</span></h3> <!-- we add the label class in a span-->
             <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eos earum, quam facere a voluptates. Autem nam, ipsa modi ipsum adipisci! Explicabo incidunt error voluptates, neque expedita quasi, optio aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur porro, amet consectetur architecto, beatae quos deleniti quidem inventore voluptas ratione iste cumque corrupti explicabo ullam quod cum quas ea molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptas eos, nemo dignissimos assumenda iusto ratione. Hic perspiciatis minus, numquam sapiente. Consectetur illum mollitia pariatur ipsum! Odit laborum eveniet sunt? </p>
-            <a href="article.php?article_id=1">read articles</a>
+            <a href="article.php?article_id=1">read article..</a>
         </section>
 
         <section class="col-sm-4">
             <h3>Grooming <span class="label label-primary">New</span></h3>
             <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eos earum, quam facere a voluptates. Autem nam, ipsa modi ipsum adipisci! Explicabo incidunt error voluptates, neque expedita quasi, optio aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur porro, amet consectetur architecto, beatae quos deleniti quidem inventore voluptas ratione iste cumque corrupti explicabo ullam quod cum quas ea molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptas eos, nemo dignissimos assumenda iusto ratione. Hic perspiciatis minus, numquam sapiente. Consectetur illum mollitia pariatur ipsum! Odit laborum eveniet sunt?</p>
-            <a href="article.php?article_id=2">read articles </a>
+            <a href="article.php?article_id=2">read article.. </a>
         </section>
 
         <section class="col-sm-4">
             <h3>General Health <span class="label label-primary">New</span></h3>
             <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eos earum, quam facere a voluptates. Autem nam, ipsa modi ipsum adipisci! Explicabo incidunt error voluptates, neque expedita quasi, optio aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur porro, amet consectetur architecto, beatae quos deleniti quidem inventore voluptas ratione iste cumque corrupti explicabo ullam quod cum quas ea molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptas eos, nemo dignissimos assumenda iusto ratione. Hic perspiciatis minus, numquam sapiente. Consectetur illum mollitia pariatur ipsum! Odit laborum eveniet sunt?</p>
-            <a href="article.php?article_id=3">read articles</a>
+            <a href="article.php?article_id=3">read article..</a>
         </section>
         
         <section>

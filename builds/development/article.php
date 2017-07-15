@@ -1,4 +1,5 @@
 <?php
+require ('includes/config.inc.php');
 include('includes/header.inc.php'); 
 ?>
 <div class="row">

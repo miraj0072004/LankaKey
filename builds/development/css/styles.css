@@ -20,6 +20,14 @@
     font-family:Lora;
 }
 */
+
+.media img { width: 100px;}
+
+.member_info
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 /******************about us tab styles**************************/
 #article
 {
@@ -103,7 +111,10 @@
 {
 /*    display: none;*/
 }
-
+#contact
+{
+    margin-top: 20px;
+}
 
 
 
@@ -158,14 +169,18 @@
     
     
 }
-
-#footer_address,footer_copyright
+#footer_address p
 {
-    height: 100%;
-    display : flex;
+    margin-bottom: 2px;
 }
 
 
+
+.align_content_vertical
+{
+    margin-top:auto;
+    margin-bottom:auto;
+}
 
 /******************start of general styles**************************/
 body p,body h4,body h3,body h2,body h1,body span,body a
@@ -184,7 +199,7 @@ body
 
 .row{
     background-color: white;
-    padding-top: 25px;
+/*    padding-top: 25px;*/
     
 }
 
@@ -220,6 +235,7 @@ body
 .navbar
 {
     margin-bottom: 0;
+    z-index: 1;
 }
 
 .navbar-brand img {
@@ -236,6 +252,8 @@ body
 }
 
 
+
+
 .imghead
 {
 	background-image: url('../images/banner1.jpg');
@@ -247,9 +265,19 @@ body
 
 }
 
+hr
+{
+    margin-left:10px;
+    margin-right:10px;
+    border: none;
+    height: 4px;
+    color: white;
+    background-color:white;
+}
+
 
 /******************start of mission tab styles**************************/
-#mission article,#whatwedo article
+#mission article,#vision article,#whatwedo article
 {
     padding-right: 0px;
     padding-left: 0px;
@@ -268,13 +296,15 @@ body
 {
     height: 100%;
     display : flex;
-    align-items : center; 
+    align-items : center;
+    margin-top: auto;
+    margin-bottom: auto;
     
 }
 
 #mission .jumbotron p,#vision .jumbotron p
 {
-   color: darkgray;
+   color: darkgrey;
    font-size: 20px;
    text-align: left;
    
@@ -303,12 +333,44 @@ body
 }
 
 /******************end of mission tab styles**************************/
+
+
+@media(max-width:767px)
+{
+.mission_text_small
+    {
+        display: flex;
+    }
+
+.mission_text_big
+    {
+        display: none !important;
+    }    
+}
+
+@media(min-width:767px)
+{
+.mission_text_small
+    {
+        display: none !important;
+    }
+
+.mission_text_big
+    {
+        display: flex;
+    }    
+}
 /*
 #magazine p,#magazine h3,#magazine li,#magazine h2,#magazine h4
 {
     font-family:Bellefair;
     font-size: 18px;
 }*/
+
+#magazine_info
+{
+    padding-top: 20px;
+}
 
 #map{
     height: 400px;

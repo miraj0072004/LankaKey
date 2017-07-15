@@ -1,4 +1,5 @@
 <?php
+require ('includes/config.inc.php');
 include('includes/header.inc.php'); 
 ?>
     <div class="row">
@@ -16,30 +17,48 @@ include('includes/header.inc.php');
                
                <h4><u><strong>Bringing to you a magazine of unity </strong></u></h4>
                
-               <p>The main scope of SL Key is to bring together all the Sri Lankans communities within and outside Sri Lanka irrespective of race, religion and nationality.</p>
+               <p>The main scope of SL Key is to bring together all the Sri Lankans communities within and outside Sri Lanka irrespective of race, religion and nationality.
+               </p>
                <ul>
                    <li>
-                   This magazine offers children who live overseas the ability to get to know the values of Sri Lanka and its culture.
+                       <p>
+                       This magazine offers children who live overseas the ability to get to know the values of Sri Lanka and its culture.
+                       </p>
                    </li>
                    <li>
-                   Understanding inter-relationships between parents and children to live a better life with good character.
+                       <p>
+                       Understanding inter-relationships between parents and children to live a better life with good character.
+                       </p>
                    </li>
                    <li>
-                   Psychology related articles which give tips on how to face in today’s society.
+                       <p>
+                       Psychology related articles which give tips on how to face in today’s society.
+                       </p>
                    </li>
                    <li>
-                   Tips on things to follow in order to improve positive thinking which will in return help to live in the society with harmony by building the appropriate mindset.
+                       <p>
+                       Tips on things to follow in order to improve positive thinking which will in return help to live in the society with harmony by building the appropriate mindset.
+                       </p>
                    </li>
                    <li>
-                   Organize workshops to change the attitude of people who face financial difficulties and people who face various problems due to the lack of education.
+                       <p>
+                       Organize workshops to change the attitude of people who face financial difficulties and people who face various problems due to the lack of education.
+                       </p>
                    </li>
                    <li>
-                   Organize legal advisory & Psychological advisory workshops in the areas where violence against women and child abuse is prominent.</li>
-                   <li>
-                   Introduce a program for Sri Lankans who live in foreign countries and other organizations where they could contribute to help students who face financial difficulties to continue their studies with a proper legal method.
+                       <p>
+                       Organize legal advisory & Psychological advisory workshops in the areas where violence against women and child abuse is prominent.
+                       </p>
                    </li>
                    <li>
-                   Change & develop the attitude of school children and bring them to a mindset where they would protect the nature and help them to adopt a lifestyle where they would love Nature.
+                       <p>
+                       Introduce a program for Sri Lankans who live in foreign countries and other organizations where they could contribute to help students who face financial difficulties to continue their studies with a proper legal method.
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                       Change & develop the attitude of school children and bring them to a mindset where they would protect the nature and help them to adopt a lifestyle where they would love Nature.
+                       </p>
                    </li>
                </ul>
            

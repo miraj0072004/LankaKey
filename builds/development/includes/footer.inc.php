@@ -10,54 +10,49 @@ San Francisco, CA 94104<br>
 -->
 <div class="container">
 <div class="row row-eq-height">
-    <section class="col-xs-4" id="footer_logo">
+    <section class="col-xs-4 align_content_vertical" id="footer_logo">
         <img src="images/logo.jpg" alt="" class="icon img img-responsive center-block">
     </section>
-    <section class="col-xs-4" id="footer_address">
-        
-        
-        <div class="row">
-        <h4><strong>CONTACT US</strong></h4>
-        <div class="col-xs-1"><i class="fa fa-home" aria-hidden="true"></i></div>
-        <div class="col-xs-11"><p>363 , Udagama , Ampitiya Road, Kandy,</p></div>
-        
-        <div class="col-xs-11 col-xs-offset-1"><p>Sri Lanka</p></div>
-        
-        <div class="col-xs-1"><i class="fa fa-phone" aria-hidden="true"></i></div>
-        <div class="col-xs-11"><p>+94 81 2213242</p></div>
-       
-        <div class="col-xs-1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-        <div class="col-xs-11"><p>info@lankakey.org</p></div>
-        
-        
-        
-        </div>
-<!--
-        <ul style="list-style: none;">
-            <li>
-                363 , Udagama , Ampitiya Road, Kandy, Sri Lanka
-            </li>
-            <li>
-                <i class="fa fa-phone" aria-hidden="true"> +94 81 2213242</i> 
-            </li>
-            <li>
-                <i class="fa fa-envelope-o" aria-hidden="true">info@lankakey.org</i>
-            </li>
-        </ul>
--->
-       
+    <section class="col-xs-4 align_content_vertical" id="footer_address">
+             
+            <div class="row">
+                <h4><strong>CONTACT US</strong></h4>
+                <div class="col-xs-1">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-10">
+                    <p>363 , Udagama , Ampitiya Road, Kandy,</p>
+                </div>
+                <div class="col-xs-10 col-xs-offset-1">
+                     &nbsp;Sri Lanka
+                </div>
 
-    </section>
-    <section class="col-xs-4" id="footer_copyright">        
-        <div class="row">
-           <div>
-            <div class="col-xs-12" >
-                <p>&copy;2017 As One Project. Nonprofit website by Miraj Web Studio. Fundraising software by MirajCRM.</p>
-                <p>Miraj Web Studio</p>
-                <p>Miraj CRM</p>  
-            </div > 
+                <div class="col-xs-1">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-10">
+                    <p>+94 81 2213242</p>
+                </div>
+
+                <div class="col-xs-1">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-10">
+                    <p>info@lankakey.org</p>
+                </div>
             </div>
-        </div>
+        
+    </section>
+    <section class="col-xs-4 align_content_vertical" id="footer_copyright">
+                
+            <div class="row" >               
+                    <div class="col-xs-12" >
+                        <p>&copy;2017 As One Project. Nonprofit website by Miraj Web Studio. Fundraising software by MirajCRM.</p>
+                        <p>Miraj Web Studio</p>
+                        <p>Miraj CRM</p>  
+                    </div >                
+            </div>
+        
     </section>
 </div>
 </div>
@@ -85,7 +80,11 @@ San Francisco, CA 94104<br>
 
 <script src="https://use.fontawesome.com/6551ccbbd8.js"></script> <!--fontawesome js-->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+<!--form validator plugin-->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+<!--lightbox js-->
 
 <!-- Misc scripts -->
 <script>
@@ -103,7 +102,13 @@ $(function() {
     }
     ); //    accordian functionality
 });
+    
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});    
 </script>
+
 
 
 

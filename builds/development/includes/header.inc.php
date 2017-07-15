@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <!--    jquery ui stylesheet-->
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" />
+<!--    lightbox css-->
+    
 
   <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lora">
@@ -19,9 +22,11 @@
 
   
 </head>
+
 <body>
+<!--<body data-spy="scroll" data-target=".navbar-inverse" >-->
 <header>
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse"  role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
@@ -40,7 +45,7 @@
             </div>
             <!-- navbar-header -->
             <div class="collapse navbar-collapse" id="collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav  navbar-right">
                    <?php
                     
                     // array of labels and pages

@@ -1,67 +1,95 @@
 <?php
+require ('includes/config.inc.php');
 include('includes/header.inc.php'); 
 ?>
-           <div class="row">
-            <section class="col-xs-12">
-                
-                <!-- Form Name -->
-                <legend>Contact Us</legend>
+          
+          
+          
+        <div class="row">
+            <div id="contact">
+                <section class="col-xs-12">
 
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Name</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" type="text" id="inputName" placeholder="Name">
-                        </div>
+                    <!-- Form Name -->
+                    <legend class="col-xs-offset-2">Contact Us</legend>
 
-                    </div>
+                    <?php
+                    if ($_SERVER['REQUEST_METHOD']=='POST')
+                    {
+                        if(!empty($_POST['input_name']) && !empty($_POST['input_email']) && !empty($_POST['input_comments']))
+                        {
+                          $body="Name : {$_POST['input_name']}\n\n
+                          Comments : {$_POST['input_comments']}";
 
-                    <div class="form-group">
-                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" type="email" id="inputEmail" placeholder="Email">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="selectSite" class="col-sm-2 control-label">Site</label>
-                        <div class="col-sm-10">
-                            <select class="form-control" id="selectSite">
-                                <option>Choose...</option>
-                                <option>bla</option>
-                                <option>bla 1</option>
-                                <option>bla 2</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-10 col-sm-offset-2">
-                            <div class="checkbox">
-
-                                <label>
-                                    <input id="inputAddList" type="checkbox">Add me to e-mail blast
-                                </label>
+                          //uncomment this when there is a mail server ready and you are ready to recieve mails    
+                          //mail(EMAIL, 'Contact Form Submission', $body, "From: {$_POST['input_email']}");  
+                        }
+                       echo "<p class='col-xs-10 col-xs-offset-2'> Thank you ". $_POST['input_name'] . " for your comment! We will get back to you </p>";
+                    }
+                    ?>
+                    <form class="form-horizontal" data-toggle="validator" method="post" action="contact.php">
+                        <!--Name field-->
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="inputName" placeholder="Name" name="input_name" required>
+                            </div>
+                            <div class="help-block with-errors col-sm-10 col-sm-offset-2">                        
                             </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="inputComments" class="col-sm-2 control-label">Comments</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="inputComments"></textarea>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="email" id="inputEmail" placeholder="Email" data-error="This email address is invalid" name="input_email" required>
+                            </div>
+                            <div class="help-block with-errors col-sm-offset-2"></div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-10 col-sm-offset-2">
-                            <input type="submit" class="btn btn-default" value="submit">
+
+    <!--
+                        <div class="form-group">
+                            <label for="selectSite" class="col-sm-2 control-label">Site</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="selectSite">
+                                    <option>Choose...</option>
+                                    <option>bla</option>
+                                    <option>bla 1</option>
+                                    <option>bla 2</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                </form>
+    -->
+
+    <!--
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <div class="checkbox">
+
+                                    <label>
+                                        <input id="inputAddList" type="checkbox">Add me to e-mail blast
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+    -->
+
+                        <div class="form-group">
+                            <label for="inputComments" class="col-sm-2 control-label">Comments</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="inputComments" name="input_comments" required></textarea>
+                            </div>
+                            <div class="help-block with-errors col-sm-offset-2"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <input type="submit" class="btn btn-default" value="submit">
+                            </div>
+                        </div>
+                    </form>
 
 
-            </section>
-            
+
+                </section>
+
             <section class="col-xs-12 col-sm-6">
                 <div id="map"></div>                
             </section>
@@ -81,6 +109,8 @@ include('includes/header.inc.php');
                     </div>     
                 </div>
             </section>
+        
+            </div>
         </div>
         <!-- row -->
         

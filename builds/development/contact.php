@@ -10,7 +10,7 @@ include('includes/header.inc.php');
                 <section class="col-xs-12">
 
                     <!-- Form Name -->
-                    <legend class="col-xs-offset-2">Contact Us</legend>
+                    <legend class="col-sm-offset-2">Contact Us</legend>
 
                     <?php
                     if ($_SERVER['REQUEST_METHOD']=='POST')
@@ -75,7 +75,7 @@ include('includes/header.inc.php');
                         <div class="form-group">
                             <label for="inputComments" class="col-sm-2 control-label">Comments</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" id="inputComments" name="input_comments" required></textarea>
+                                <textarea rows="10" class="form-control" id="inputComments" name="input_comments" required></textarea>
                             </div>
                             <div class="help-block with-errors col-sm-offset-2"></div>
                         </div>

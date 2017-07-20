@@ -5,6 +5,17 @@ define('LIVE',FALSE);
 //contact address
 define('EMAIL','miraj0072004@gmail.com');
 
+// ****************************************** //
+// ************ CONSTANTS   ************ //
+define ('BASE_URI', 'C:/MyWork/LankaKey/');
+
+define ('BASE_URL', 'http://localhost:8080/');
+
+define ('MYSQL', BASE_URI . 'builds/development/includes/mysql.inc.php');
+// ************ CONSTANTS   ************ //
+// ****************************************** //
+
+
 
 // ****************************************** //
 // ************ ERROR MANAGEMENT ************ //

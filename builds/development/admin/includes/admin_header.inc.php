@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <!--    jquery ui stylesheet-->
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" />
-<!--    lightbox css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <!--    data tables stylesheet-->
+    
+
     
 
   <link rel="stylesheet"
@@ -24,7 +26,7 @@
 </head>
 
 <body>
-<!--<body data-spy="scroll" data-target=".navbar-inverse" >-->
+
 <header>
 <nav class="navbar navbar-inverse"  role="navigation">
         <div class="container">
@@ -38,19 +40,15 @@
 
               <a class="navbar-brand" href="index.php">
                   
-<!--
-                          <span>SriLanka Key 
-                          </span>
--->
 
-                          <span><img src="images/logo_dark_grey.jpg" class="icon img img-responsive center-block">
-                          </span>SriLanka Key
+
+                        SriLanka Key Administration
                           
                           
                       
               </a>
            
-<!--           <a class="navbar-brand" href="#featured">Wisdom <span class="subhead">Pet Medicine</span></a>-->
+
             </div>
             <!-- navbar-header -->
             <div class="collapse navbar-collapse" id="collapse">
@@ -60,12 +58,9 @@
                     // array of labels and pages
                     $pages= array
                     (
-                        'Home'=>'index.php',
-                        'Articles & News'=>'articles.php',
-                        'Tree & Mind'=>'treeandmind.php',
-                        'SLKey Magazine'=>'magazine.php',
-                        'About Us'=>'about.php',
-                        'Contact Us'=>'contact.php'
+                        'Add Page'=>'add_page.php',
+                        'Pages'=>'view_page.php'
+
                     );
                     
 //                    The page that's being viewed
@@ -76,13 +71,7 @@
                     {
                      echo '<li';
                         
-                     if ($v=='articles.php')
-                     {
-                       if ($this_page=='article.php')
-                        {
-                           echo ' class="active"'; 
-                        }  
-                     }
+
                         
                      if ($this_page==$v)
                      {
@@ -94,14 +83,7 @@
                     
                     ?>
                    
-<!--
-                    <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="articles.php">Articles & News</a></li>
-                    <li><a href="#">Tree & Mind</a></li>
-                    <li><a href="magazine.php">SLKey Magazine</a></li>
-                   <li><a href="about.php">About Us</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
--->
+
                     
                     
                 </ul>

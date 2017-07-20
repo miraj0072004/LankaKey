@@ -16,28 +16,28 @@ San Francisco, CA 94104<br>
     <section class="col-xs-4 align_content_vertical" id="footer_address">
              
             <div class="row">
-                <h4><strong>CONTACT US</strong></h4>
+                <h4><strong>GET IN TOUCH</strong></h4>
                 <div class="col-xs-1">
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </div>
-                <div class="col-xs-10">
+                <div class="col-xs-11">
                     <p>363 , Udagama , Ampitiya Road, Kandy,</p>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1">
+                <div class="col-xs-11 col-xs-offset-1">
                      &nbsp;Sri Lanka
                 </div>
 
                 <div class="col-xs-1">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
-                <div class="col-xs-10">
+                <div class="col-xs-11">
                     <p>+94 81 2213242</p>
                 </div>
 
                 <div class="col-xs-1">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
-                <div class="col-xs-10">
+                <div class="col-xs-11">
                     <p>info@lankakey.org</p>
                 </div>
             </div>
@@ -85,6 +85,9 @@ San Francisco, CA 94104<br>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
 <!--lightbox js-->
+
+<script type="text/javascript" src="../js/jquery.canvasjs.min.js"></script>
+<!--script for making graphs-->
 
 <!-- Misc scripts -->
 <script>

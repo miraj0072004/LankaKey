@@ -114,6 +114,12 @@
 #contact
 {
     margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#contact legend
+{
+    border-bottom: none;
 }
 
 
@@ -227,41 +233,51 @@ body
     font-size: 1.1em !important;
     }
 
-.navbar-brand{
-  font-size: 1.4em !important; 
-/*  padding: 0px;*/
-}
-
 .navbar
 {
     margin-bottom: 0;
     z-index: 1;
 }
 
+/*
+.navbar-brand{
+  font-size: 1.4em !important;
+
+}
+
 .navbar-brand img {
   height: 150%;
-    float:left;
-    vertical-align: middle;
-  
-/*
-  margin-left: 20px;
- position:absolute;
-    z-index: 1;
-*/
   
 }
+*/
+
+
+
+.navbar .navbar-brand {
+  padding-top: 5px;
+}
+.navbar .navbar-brand img {
+  height: 40px;
+  width: 40px;
+    display: inline;
+}
+
+
 
 
 
 
 .imghead
 {
-	background-image: url('../images/banner1.jpg');
+	background: url('../images/banner2.jpg') no-repeat center center fixed;
 	background-position: center;
-	background-size: cover;
-	height: 750px;
-    margin-bottom: 20px;
     
+	background-size: cover;
+	height: 700px;
+    max-width: 100%;
+   
+/*    margin-bottom: 20px;*/
+
 
 }
 

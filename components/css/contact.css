@@ -1,4 +1,10 @@
 #contact
 {
     margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#contact legend
+{
+    border-bottom: none;
 }

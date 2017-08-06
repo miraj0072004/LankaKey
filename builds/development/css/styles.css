@@ -194,7 +194,8 @@ body p,body h4,body h3,body h2,body h1,body span,body a
     font-family:Lora !important;
 }
 #content {
-    margin-bottom: 250px;    
+    margin-bottom: 250px;
+    
     
 }
 
@@ -202,6 +203,8 @@ body
 {
     background-color:black;
 }
+
+
 
 .row{
     background-color: white;
@@ -388,6 +391,16 @@ hr
     padding-top: 20px;
 }
 
+#magazine ul li 
+{
+    margin-bottom: 20px;
+}
+
+#magazine_info_top
+{
+    margin-top: 30px;
+ margin-bottom: 30px;   
+}
 #map{
     height: 400px;
     width: 100%;

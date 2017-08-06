@@ -4,7 +4,8 @@ body p,body h4,body h3,body h2,body h1,body span,body a
     font-family:Lora !important;
 }
 #content {
-    margin-bottom: 250px;    
+    margin-bottom: 250px;
+    
     
 }
 
@@ -12,6 +13,8 @@ body
 {
     background-color:black;
 }
+
+
 
 .row{
     background-color: white;

@@ -25,6 +25,7 @@
 
 <body>
 <!--<body data-spy="scroll" data-target=".navbar-inverse" >-->
+
 <header>
 <nav class="navbar navbar-inverse"  role="navigation">
         <div class="container">

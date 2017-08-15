@@ -63,7 +63,7 @@
                     (
                         'Home'=>'index.php',
                         'Articles & News'=>'articles.php',
-                        'Tree & Mind'=>'treeandmind.php',
+                        'Projects'=>'#',
                         'SLKey Magazine'=>'magazine.php',
                         'About Us'=>'about.php',
                         'Contact Us'=>'contact.php'
@@ -85,11 +85,35 @@
                         }  
                      }
                         
+                     if ($v=='#')
+                     {
+                       if ($this_page=='treeandmind.php' || $this_page=='crimeandsociety.php')
+                        {
+                           echo ' class="active"'; 
+                        }  
+                     }    
+                        
                      if ($this_page==$v)
                      {
                         echo ' class="active"'; 
                      }
-                        echo '><a href="'.$v.'">'.$k.'</a></li>';
+                        
+                     if ($v=='#')
+                        {
+                          echo '><a href="'.$v.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.$k.'<span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                                <li><a href="treeandmind.php">Tree & Mind</a></li>
+                                <li><a href="crimeandsociety.php">Crime & Society</a></li>                        
+                            </ul>
+                          </li>';
+                        }
+                      else
+                        {
+                          echo '><a href="'.$v.'">'.$k.'</a>
+                           
+                          </li>';  
+                        }
+                        
                     }
                     
                     

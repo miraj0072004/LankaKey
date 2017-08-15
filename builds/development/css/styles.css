@@ -189,7 +189,7 @@
 }
 
 /******************start of general styles**************************/
-body p,body h4,body h3,body h2,body h1,body span,body a
+body p,body h4,body h3,body h2,body h1,body span,body a, ol li
 {
     font-family:Lora !important;
 }
@@ -225,6 +225,11 @@ body
 .row-eq-height > [class*='col-'] {
   display: flex;
   flex-direction: column;
+}
+
+.center-text-align
+{
+    text-align: center;
 }
 
 

@@ -103,7 +103,7 @@
                           echo '><a href="'.$v.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.$k.'<span class="caret"></span></a>
                            <ul class="dropdown-menu">
                                 <li><a href="treeandmind.php">Tree & Mind</a></li>
-                                <li><a href="crimeandsociety.php">Crime & Society</a></li>                        
+                                <li><a href="crimeandsociety.php">Crime & Society</a></li>         <li><a href="artandharmony.php">Art & Harmony</a></li>        
                             </ul>
                           </li>';
                         }

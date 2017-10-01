@@ -1,0 +1,27 @@
+<div class=row><?php
+
+if (isset($_GET['article_id']))
+{
+    $article_id=$_GET['article_id'];
+//    if ($article_id==1)
+//    {
+//        $title="Article One";
+//    }
+//    else if ($article_id==2)
+//    {
+//        $title="Article Two";
+//    }
+//    else if ($article_id==3)
+//    {
+//        $title="Article Three";
+//    }
+    
+    
+        
+}
+?><div id=article class=col-xs-12><?php
+    $q="select title,content,date_created,categories_id from pages where id=$article_id";    
+    $r=mysqli_query($dbc,$q);    
+    $row=mysqli_fetch_array($r,MYSQLI_ASSOC);
+    
+    echo "<h2><u>{$row['title']}</u>"; echo "{$row['content']}"; echo date("Y/m/d", strtotime($row['date_created'])); ?></div></div>

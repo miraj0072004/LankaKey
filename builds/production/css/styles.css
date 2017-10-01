@@ -1,0 +1,412 @@
+/******************about us tab styles**************************/
+#staff h3,#staff p
+{
+    text-align: center;
+}
+#staff section
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#about .jumbotron
+{
+    padding: 24px;
+}
+
+/*
+#about p,#about h4,#about h3,#about h2
+{
+    font-family:Lora;
+}
+*/
+
+.media img { width: 100px;}
+
+.member_info
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/******************about us tab styles**************************/
+#article
+{
+    background-color: white;
+}
+
+/*
+#articles p,#articles h4,#articles h3,#articles h2
+{
+    font-family:Lora;
+}*/
+
+.tree {
+    min-height:20px;
+    padding:19px;
+    margin-bottom:20px;
+    background-color:#fbfbfb;
+    border:1px solid #999;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px;
+    position:relative
+}
+.tree li::before, .tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto
+}
+.tree li::before {
+    border-left:1px solid #999;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width:1px
+}
+.tree li::after {
+    border-top:1px solid #999;
+    height:20px;
+    top:25px;
+    width:25px
+}
+.tree li span {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #999;
+    border-radius:5px;
+    display:inline-block;
+    padding:3px 8px;
+    text-decoration:none
+}
+.tree li.parent_li>span {
+    cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:30px
+}
+.tree li.parent_li>span:hover, .tree li.parent_li>span:hover+ul li span {
+    background:#eee;
+    border:1px solid #94a0b4;
+    color:#000
+}
+
+#articles_archive
+{
+   margin-top: 20px; 
+}
+
+#article_ul li
+{
+/*    display: none;*/
+}
+#contact
+{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#contact legend
+{
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#services{
+    background-color: white;
+}
+
+
+
+.wpb_wrapper_parent
+{
+    height: 100%;
+    display : flex;
+    align-items : center;
+    
+}
+
+.wpb_wrapper
+{
+    border: 4px solid white;
+
+}
+
+
+
+
+
+#footer {
+ text-align: left;
+ position: fixed;
+ z-index: -1;
+ height: 250px; /*This may to be adjusted depending on the content of your footer*/
+ width: 100%;
+ bottom: 0;
+ 
+}
+
+#footer img
+{
+    max-width:300px;
+    max-height: 180px;
+    margin-bottom: 20px;
+    
+    
+}
+#footer_address p
+{
+    margin-bottom: 2px;
+}
+
+
+
+.align_content_vertical
+{
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+/******************start of general styles**************************/
+body p,body h4,body h3,body h2,body h1,body span,body a, ol li
+{
+    font-family:Lora !important;
+}
+#content {
+    margin-bottom: 250px;
+    
+    
+}
+
+body
+{
+    background-color:black;
+}
+
+
+
+.row{
+    background-color: white;
+/*    padding-top: 25px;*/
+    
+}
+
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+  
+  
+}
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-text-align
+{
+    text-align: center;
+}
+
+
+/******************end of general styles**************************/
+
+
+.nav a{
+/*    color: white !important;*/
+    font-size: 1.1em !important;
+    }
+
+.navbar
+{
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+/*
+.navbar-brand{
+  font-size: 1.4em !important;
+
+}
+
+.navbar-brand img {
+  height: 150%;
+  
+}
+*/
+
+
+
+.navbar .navbar-brand {
+  padding-top: 5px;
+}
+.navbar .navbar-brand img {
+  height: 40px;
+  width: 40px;
+    display: inline;
+}
+
+
+
+
+
+
+.imghead
+{
+	background: url('../images/banner2.jpg') no-repeat center center fixed;
+	background-position: center;
+    
+	background-size: cover;
+	height: 700px;
+    max-width: 100%;
+   
+/*    margin-bottom: 20px;*/
+
+
+}
+
+hr
+{
+    margin-left:10px;
+    margin-right:10px;
+    border: none;
+    height: 4px;
+    color: white;
+    background-color:white;
+}
+
+
+/******************start of mission tab styles**************************/
+#mission article,#vision article,#whatwedo article
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 10px;
+    background-color: white;     
+}
+
+#mission article h1,#vision article h1,#howwedoit h1{
+    font-family:'Roboto Condensed';
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#mission .jumbotron,#vision .jumbotron
+{
+    height: 100%;
+    display : flex;
+    align-items : center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+#mission .jumbotron p,#vision .jumbotron p
+{
+   color: darkgrey;
+   font-size: 20px;
+   text-align: left;
+   
+}
+
+#myCarousel .nav a small {
+    display:block;
+}
+#myCarousel .nav {
+    background:#eee;
+}
+#myCarousel .nav a {
+    border-radius:0px;
+}
+
+#howwedoit
+{
+    margin-top: 0px;
+    background-color: white;
+}
+
+#howwedoit h1
+{
+    margin: 0px;
+    padding-top: 25px;
+}
+
+/******************end of mission tab styles**************************/
+
+
+@media(max-width:767px)
+{
+.mission_text_small
+    {
+        display: flex;
+    }
+
+.mission_text_big
+    {
+        display: none !important;
+    }    
+}
+
+@media(min-width:767px)
+{
+.mission_text_small
+    {
+        display: none !important;
+    }
+
+.mission_text_big
+    {
+        display: flex;
+    }    
+}
+/*
+#magazine p,#magazine h3,#magazine li,#magazine h2,#magazine h4
+{
+    font-family:Bellefair;
+    font-size: 18px;
+}*/
+
+#magazine_info
+{
+    padding-top: 20px;
+}
+
+#magazine ul li 
+{
+    margin-bottom: 20px;
+}
+
+#magazine_info_top
+{
+    margin-top: 30px;
+ margin-bottom: 30px;   
+}
+#map{
+    height: 400px;
+    width: 100%;
+}

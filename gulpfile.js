@@ -3,17 +3,33 @@ var gulp=require ('gulp'),
     concat=require('gulp-concat'),
     browserify=require('gulp-browserify'),
     connect = require('gulp-connect-php'),
+    gulpif=require('gulp-if'),
+    uglify=require('gulp-uglify'),
+    minifyHTML=require('gulp-minify-html'),
     browserSync = require('browser-sync').create();
     
+    
 
-var jsSources,outputDir;
+var jsSources,outputDir,htmlSources,phpSources,includeSources,cssSources,env;
 var reload  = browserSync.reload;
 
+env=process.env.NODE_ENV || 'development';
+
+if(env=='development')
+   {
+    outputDir='builds/development/';
+   }
+   else
+   {
+    outputDir='builds/production/';
+   }
+
+
 jsSources='components/scripts/*.js';
-outputDir = 'builds/development/';
-phpSources= 'builds/development/*.php';
+//outputDir = 'builds/development/';
+phpSources= outputDir+'*.php';
 htmlSources= 'builds/development/views/*.html';
-includeSources= 'builds/development/includes/*.php';
+includeSources= outputDir+'includes/*.php';
 cssSources='components/css/*.css'
 
 gulp.task('log',function(){    
@@ -25,6 +41,7 @@ gulp.task('js',function(){
     gulp.src(jsSources)
     .pipe(concat('script.js'))
     .pipe(browserify())
+    .pipe(gulpif(env==='production',uglify()))
     .pipe(gulp.dest(outputDir+'js'))        
 });
 
@@ -44,7 +61,9 @@ gulp.task('php',function(){
 
 //html task for views
 gulp.task('html',function(){
-    gulp.src(htmlSources);
+    gulp.src(htmlSources)
+    .pipe(gulpif(env==='production',minifyHTML()))
+    .pipe(gulpif(env==='production',gulp.dest(outputDir+'views/')))
 });
 
 //task for included files
@@ -115,6 +134,6 @@ gulp.task('connect', function() {
 
 
 
-gulp.task('default',['js','css','watch','browserSync']);    
+gulp.task('default',['js','css','html','watch','browserSync']);    
 
 

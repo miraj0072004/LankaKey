@@ -28,6 +28,11 @@
     margin-top: auto;
     margin-bottom: auto;
 }
+
+#about_accordion section
+{
+    padding: 50px;
+}
 /******************about us tab styles**************************/
 #article
 {
@@ -408,5 +413,10 @@ hr
 }
 #map{
     height: 400px;
+    width: 100%;
+}
+#treeandmind img
+{
+   margin: auto;
     width: 100%;
 }

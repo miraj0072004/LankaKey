@@ -21,7 +21,7 @@ San Francisco, CA 94104<br>
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-11">
-                    <p>363 , Udagama , Ampitiya Road, Kandy,</p>
+                    <p>563 , Udagama , Ampitiya Road, Kandy,</p>
                 </div>
                 <div class="col-xs-11 col-xs-offset-1">
                      &nbsp;Sri Lanka
@@ -31,7 +31,7 @@ San Francisco, CA 94104<br>
                     <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-11">
-                    <p>+94 81 2213242</p>
+                    <p>+94 71 2213242</p>
                 </div>
 
                 <div class="col-xs-1">

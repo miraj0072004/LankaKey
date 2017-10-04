@@ -28,4 +28,9 @@
     margin-top: auto;
     margin-bottom: auto;
 }
+
+#about_accordion section
+{
+    padding: 50px;
+}
 /******************about us tab styles**************************/

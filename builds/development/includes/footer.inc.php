@@ -17,6 +17,7 @@ San Francisco, CA 94104<br>
              
             <div class="row">
                 <h4><strong>GET IN TOUCH</strong></h4>
+<!--
                 <div class="col-xs-1">
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </div>
@@ -33,12 +34,13 @@ San Francisco, CA 94104<br>
                 <div class="col-xs-11">
                     <p>+94 71 2213242</p>
                 </div>
+-->
 
                 <div class="col-xs-1">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-11">
-                    <p>info@lankakey.org</p>
+                    <p>lankakey4u@gmail.com</p>
                 </div>
             </div>
         
@@ -47,9 +49,9 @@ San Francisco, CA 94104<br>
                 
             <div class="row" >               
                     <div class="col-xs-12" >
-                        <p>&copy;2017 As One Project. Nonprofit website by Miraj Web Studio. Fundraising software by MirajCRM.</p>
+                        <p>&copy;2017 As One Project. Nonprofit website by Miraj Web Studio. Fundraising software by Manulak CRM.</p>
                         <p>Miraj Web Studio</p>
-                        <p>Miraj CRM</p>  
+                        <p>Manulak CRM</p>  
                     </div >                
             </div>
         
@@ -111,7 +113,24 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     $(this).ekkoLightbox();
 });    
 </script>
+<script>    
+      function initMap() {
+        var lankakey = {lat: 6.9173338, lng: 79.8646357};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: lankakey
+        });
+        var marker = new google.maps.Marker({
+          position: lankakey,
+          map: map
+        });
+      }
 
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIZ5v6KMEcNbRHblM4pmHrvuHyLjWdB_Q&callback=initMap">
+</script>
 
 
 

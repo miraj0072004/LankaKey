@@ -35,7 +35,7 @@
         while ($row=mysqli_fetch_array($r,MYSQLI_ASSOC))
         {
             echo "<section class='col-sm-4'>
-            <h3>{$row['title']}<span class='label label-primary'>New</span></h3>
+            <h3>{$row['title']} <span class='label label-primary'>New</span></h3>
             <p>".substr($row['content'],0,500)."</p>
             <a href='article.php?article_id={$row['id']}'>read article..</a>
         </section>

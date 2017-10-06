@@ -130,6 +130,29 @@
 
 
 
+#mapandaddress {
+    
+    overflow:hidden;
+    display: flex;
+    float:left;
+    width: 100%;
+}
+
+
+
+#mapandaddress_right .jumbotron
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+
+
 
 
 

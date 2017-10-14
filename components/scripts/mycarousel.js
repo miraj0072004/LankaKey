@@ -1,7 +1,7 @@
 $(document).ready( function() {
     $('#myCarousel').carousel({
       
-//        interval:   4000
+        interval:   4000,
         pause: false, // don't forget the colon here, it's an object 
         interval: false, 
         wrap: false
@@ -24,4 +24,16 @@ $(document).ready( function() {
 		}
 		clickEvent = false;
 	});
-});
+    
+$('#featured-carousel').carousel
+   (
+       {
+           interval:3000,
+           pause: false,
+           wrap: true,
+           keyboard: true
+       }   
+   );     
+}
+                  
+);

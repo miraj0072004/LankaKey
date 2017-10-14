@@ -17,24 +17,22 @@ San Francisco, CA 94104<br>
              
             <div class="row">
                 <h4><strong>GET IN TOUCH</strong></h4>
-<!--
                 <div class="col-xs-1">
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-11">
-                    <p>563 , Udagama , Ampitiya Road, Kandy,</p>
+                    <p>*** , ******* , ******** ****, *****,</p>
                 </div>
                 <div class="col-xs-11 col-xs-offset-1">
-                     &nbsp;Sri Lanka
+                     &nbsp;*** *****
                 </div>
 
                 <div class="col-xs-1">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-11">
-                    <p>+94 71 2213242</p>
+                    <p>+** ** *******</p>
                 </div>
--->
 
                 <div class="col-xs-1">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -49,6 +47,7 @@ San Francisco, CA 94104<br>
                 
             <div class="row" >               
                     <div class="col-xs-12" >
+                        <h3><a href="/includes/SriLankanKey_RegistrationForm.docx" download>Download Registration Form</a></h3>
                         <p>&copy;2017 As One Project. Nonprofit website by Miraj Web Studio. Fundraising software by Manulak CRM.</p>
                         <p>Miraj Web Studio</p>
                         <p>Manulak CRM</p>  

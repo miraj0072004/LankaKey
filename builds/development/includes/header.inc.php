@@ -59,14 +59,26 @@
                    <?php
                     
                     // array of labels and pages
+//                    $pages= array
+//                    (
+//                        'Home'=>'index.php',
+//                        'Articles & News'=>'articles.php',
+//                        'Projects'=>'#',
+//                        'SLKey Magazine'=>'magazine.php',
+//                        'About Us'=>'about.php',
+//                        'Contact Us'=>'contact.php'
+//                    );
+                    
                     $pages= array
                     (
                         'Home'=>'index.php',
-                        'Articles & News'=>'articles.php',
-                        'Projects'=>'#',
-                        'SLKey Magazine'=>'magazine.php',
+                        'News'=>'articles.php',
+                        'Tree&Mind'=>'treeandmind.php',
+                        'Crime&Society'=>'crimeandsociety.php',
+                        'Art&Harmony'=>'artandharmony.php',
                         'About Us'=>'about.php',
-                        'Contact Us'=>'contact.php'
+                        'SLKey Magazine'=>'magazine.php'
+                        
                     );
                     
 //                    The page that's being viewed
@@ -103,7 +115,8 @@
                           echo '><a href="'.$v.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.$k.'<span class="caret"></span></a>
                            <ul class="dropdown-menu">
                                 <li><a href="treeandmind.php">Tree & Mind</a></li>
-                                <li><a href="crimeandsociety.php">Crime & Society</a></li>         <li><a href="artandharmony.php">Art & Harmony</a></li>        
+                                <li><a href="crimeandsociety.php">Crime & Society</a></li>
+                                <li><a href="artandharmony.php">Art & Harmony</a></li>        
                             </ul>
                           </li>';
                         }

@@ -32,25 +32,21 @@
     clear: both;
 
 }
-/*
 #slogan
 {
-    clear: both;
-    float: left;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     
 }
-*/
 
-/*
 #slogan_image
 {
-    width: 150px;
-    height: 150px;
-    float: left;
+    max-width:250px;
+    max-height: 250px;
+/*    float: left;*/
 }
-*/
 #slogan_upper_text
 {
     display: flex;

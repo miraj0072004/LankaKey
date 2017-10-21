@@ -42,5 +42,15 @@ body
     text-align: center;
 }
 
+.slight-top-margin
+{
+    margin-top: 20px;
+}
+
+.slight-bottom-margin
+{
+    margin-bottom: 20px;
+}
+
 
 /******************end of general styles**************************/

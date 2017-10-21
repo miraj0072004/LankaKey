@@ -76,8 +76,9 @@
                         'Tree&Mind'=>'treeandmind.php',
                         'Crime&Society'=>'crimeandsociety.php',
                         'Art&Harmony'=>'artandharmony.php',
-                        'About Us'=>'about.php',
-                        'SLKey Magazine'=>'magazine.php'
+                        'Projects'=>'projects.php',
+                        'About Us'=>'about.php'
+                        
                         
                     );
                     

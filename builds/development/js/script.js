@@ -1,4 +1,23 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+$("#artandh_english_btn").click(
+    function()
+    {
+        $("#artandharmonysinhalacontent").hide();
+        $("#artandharmonycontent").show();
+        $(this).addClass('active');
+        $("#artandh_sinhala_btn").removeClass("active");
+    }
+);
+
+$("#artandh_sinhala_btn").click(
+    function()
+    {
+        $("#artandharmonysinhalacontent").show();
+        $("#artandharmonycontent").hide();
+        $(this).addClass('active');
+        $("#artandh_english_btn").removeClass("active");
+    }
+);
 //tree list functionality
 $(function () {
     $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
@@ -157,5 +176,29 @@ $(function(){
 	};
 
 	$("#chartContainer").CanvasJSChart(options);
+
 });
+
+
+    
+        $("#treeandm_english_btn").click(
+        function()
+        {
+            $("#treeandmindsinhalacontent").hide();
+            $("#treeandmindcontent").show();
+            $(this).addClass('active');
+            $("#treeandm_sinhala_btn").removeClass("active");
+        }
+    );
+
+    $("#treeandm_sinhala_btn").click(
+        function()
+        {
+            $("#treeandmindsinhalacontent").show();
+            $("#treeandmindcontent").hide();
+            $(this).addClass('active');
+            $("#treeandm_english_btn").removeClass("active");
+        }
+    );
+    
 },{}]},{},[1])

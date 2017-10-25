@@ -1,0 +1,41 @@
+
+/*
+
+.artandharmony1
+{
+    background: url('../images/sinhalatranslations/artandharmony1.jpg') no-repeat center;
+    background-size: auto 100%;
+    width: auto;
+}
+
+.artandharmony2
+{
+    background: url('../images/sinhalatranslations/artandharmony2.jpg') no-repeat center;
+    background-size: auto 100%;
+    width: auto; 
+}
+*/
+
+/*
+#artandharmonysinhalacontent img
+{
+     margin: 0 !important;
+}
+*/
+
+#artandharmonyheader
+{
+    display: flex;
+    align-items: center; /* align vertical */
+}
+
+#artandharmonyheader button
+{
+    float: right;
+    display: inline;
+}
+
+#artandharmonyheader_h1 
+{
+    padding-left: 0px !important;
+}

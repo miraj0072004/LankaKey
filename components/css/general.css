@@ -52,5 +52,47 @@ body
     margin-bottom: 20px;
 }
 
+/*translation button styles*/
+
+.btn-english
+{
+    background: url('../images/EnglishButton.jpg') no-repeat center;
+/*    background-size: contain !important;*/
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 30px;
+    
+}
+
+.btn-sinhala
+{
+    background: url('../images/SinhalaButton.jpg') no-repeat center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 30px;
+    margin-left: 15px !important; 
+    
+}
+
+.btn-common
+{
+   margin-left: 15px; 
+}
+
+/*
+.btn-english:active
+{
+    outline: 1px solid red;
+    
+}
+*/
+
+/*to horizontally center .. used in art and harmony and tree and mind to horizontally center the translated images*/
+.hori_center
+{
+    margin: auto;
+}
 
 /******************end of general styles**************************/

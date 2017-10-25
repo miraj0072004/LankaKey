@@ -34,6 +34,47 @@
     padding: 50px;
 }
 /******************about us tab styles**************************/
+
+/*
+
+.artandharmony1
+{
+    background: url('../images/sinhalatranslations/artandharmony1.jpg') no-repeat center;
+    background-size: auto 100%;
+    width: auto;
+}
+
+.artandharmony2
+{
+    background: url('../images/sinhalatranslations/artandharmony2.jpg') no-repeat center;
+    background-size: auto 100%;
+    width: auto; 
+}
+*/
+
+/*
+#artandharmonysinhalacontent img
+{
+     margin: 0 !important;
+}
+*/
+
+#artandharmonyheader
+{
+    display: flex;
+    align-items: center; /* align vertical */
+}
+
+#artandharmonyheader button
+{
+    float: right;
+    display: inline;
+}
+
+#artandharmonyheader_h1 
+{
+    padding-left: 0px !important;
+}
 #article
 {
     background-color: white;
@@ -390,6 +431,48 @@ body
     margin-bottom: 20px;
 }
 
+/*translation button styles*/
+
+.btn-english
+{
+    background: url('../images/EnglishButton.jpg') no-repeat center;
+/*    background-size: contain !important;*/
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 30px;
+    
+}
+
+.btn-sinhala
+{
+    background: url('../images/SinhalaButton.jpg') no-repeat center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 30px;
+    margin-left: 15px !important; 
+    
+}
+
+.btn-common
+{
+   margin-left: 15px; 
+}
+
+/*
+.btn-english:active
+{
+    outline: 1px solid red;
+    
+}
+*/
+
+/*to horizontally center .. used in art and harmony and tree and mind to horizontally center the translated images*/
+.hori_center
+{
+    margin: auto;
+}
 
 /******************end of general styles**************************/
 
@@ -573,4 +656,21 @@ hr
 {
    margin: auto;
     width: 100%;
+}
+
+#treeandmindheader button
+{
+    float: right;
+    display: inline;
+}
+
+#treeandmindheader
+{
+    display: flex;
+    align-items: center; /* align vertical */
+}
+
+#treeandmindheader_h1 
+{
+    padding-left: 0px !important;
 }

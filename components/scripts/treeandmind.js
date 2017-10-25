@@ -23,4 +23,28 @@ $(function(){
 	};
 
 	$("#chartContainer").CanvasJSChart(options);
+
 });
+
+
+    
+        $("#treeandm_english_btn").click(
+        function()
+        {
+            $("#treeandmindsinhalacontent").hide();
+            $("#treeandmindcontent").show();
+            $(this).addClass('active');
+            $("#treeandm_sinhala_btn").removeClass("active");
+        }
+    );
+
+    $("#treeandm_sinhala_btn").click(
+        function()
+        {
+            $("#treeandmindsinhalacontent").show();
+            $("#treeandmindcontent").hide();
+            $(this).addClass('active');
+            $("#treeandm_english_btn").removeClass("active");
+        }
+    );
+    

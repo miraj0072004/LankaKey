@@ -28,7 +28,7 @@ $(function(){
 
 
     
-        $("#treeandm_english_btn").click(
+    $("#treeandm_english_btn").click(
         function()
         {
             $("#treeandmindsinhalacontent").hide();

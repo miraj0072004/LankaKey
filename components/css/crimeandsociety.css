@@ -1,0 +1,16 @@
+#crimeandsocietyheader
+{
+    display: flex;
+    align-items: center; /* align vertical */
+}
+
+#crimeandsocietyheader button
+{
+    float: right;
+    display: inline;
+}
+
+#crimeandsocietyheader_h1 
+{
+    padding-left: 0px !important;
+}

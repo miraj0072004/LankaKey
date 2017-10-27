@@ -74,3 +74,25 @@ $(function(){
 
 	$("#chartCrimeTwo").CanvasJSChart(options);
 });
+
+
+    $("#crimeands_english_btn").click(
+        function()
+        {
+            $("#crimeandsocietysinhalacontent").hide();
+            $("#crimeandsocietycontent").show();
+            $(this).addClass('active');
+            $("#crimeands_sinhala_btn").removeClass("active");
+        }
+    );
+
+    $("#crimeands_sinhala_btn").click(
+        function()
+        {
+            $("#crimeandsocietysinhalacontent").show();
+            $("#crimeandsocietycontent").hide();
+            $(this).addClass('active');
+            $("#crimeands_english_btn").removeClass("active");
+        }
+    );
+    

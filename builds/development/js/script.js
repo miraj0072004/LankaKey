@@ -112,6 +112,28 @@ $(function(){
 });
 
 
+    $("#crimeands_english_btn").click(
+        function()
+        {
+            $("#crimeandsocietysinhalacontent").hide();
+            $("#crimeandsocietycontent").show();
+            $(this).addClass('active');
+            $("#crimeands_sinhala_btn").removeClass("active");
+        }
+    );
+
+    $("#crimeands_sinhala_btn").click(
+        function()
+        {
+            $("#crimeandsocietysinhalacontent").show();
+            $("#crimeandsocietycontent").hide();
+            $(this).addClass('active');
+            $("#crimeands_english_btn").removeClass("active");
+        }
+    );
+    
+
+
 $(document).ready( function() {
     $('#myCarousel').carousel({
       
@@ -181,7 +203,7 @@ $(function(){
 
 
     
-        $("#treeandm_english_btn").click(
+    $("#treeandm_english_btn").click(
         function()
         {
             $("#treeandmindsinhalacontent").hide();
